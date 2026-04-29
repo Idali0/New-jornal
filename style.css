@@ -10,7 +10,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
 body { background-color: var(--bg-body); color: var(--white); overflow-x: hidden; }
 
-/* Menu e Header (Mantidos conforme pedido) */
+
 .menu { background: rgba(13, 22, 45, 0.98); backdrop-filter: blur(10px); padding: 18px 5%; border-bottom: 1px solid #1e293b; position: sticky; top: 0; z-index: 1000; }
 .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1300px; margin: 0 auto; }
 .logo-textual { text-decoration: none; color: var(--white); font-size: 1.5rem; font-weight: 300; letter-spacing: 2px; }
@@ -22,7 +22,7 @@ body { background-color: var(--bg-body); color: var(--white); overflow-x: hidden
 .header-title { color: var(--white); font-size: 2rem; margin-bottom: 15px; font-weight: 800; }
 .btn-cta { background: var(--accent); border: none; color: white; padding: 10px 20px; border-radius: 4px; cursor: pointer; }
 
-/* Navegação e Setas */
+
 .section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
 .nav-arrows { display: flex; gap: 10px; }
 .arrow-btn { 
@@ -37,7 +37,6 @@ body { background-color: var(--bg-body); color: var(--white); overflow-x: hidden
 }
 .arrow-btn:hover { background: var(--accent); color: white; }
 
-/* Scroll Wrapper com Preenchimento Lateral */
 .scroll-wrapper { position: relative; width: 100%; }
 .scroll-wrapper::before, .scroll-wrapper::after {
     content: ""; position: absolute; top: 0; bottom: 0; width: 40px; z-index: 2; pointer-events: none;
@@ -53,7 +52,7 @@ body { background-color: var(--bg-body); color: var(--white); overflow-x: hidden
 }
 .news-scroll-container::-webkit-scrollbar { display: none; }
 
-/* Skeleton Loading Effect */
+
 .skeleton-card {
     min-width: 280px; height: 300px;
     background: linear-gradient(90deg, #0d162d 25%, #1a2236 50%, #0d162d 75%);
@@ -63,7 +62,7 @@ body { background-color: var(--bg-body); color: var(--white); overflow-x: hidden
 }
 @keyframes loading { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
 
-/* Cards Reais */
+
 .news-card { min-width: 280px; background: var(--bg-card); border-radius: 12px; overflow: hidden; transition: 0.3s; border: 1px solid rgba(255,255,255,0.05); }
 .news-card:hover { transform: scale(1.02); border-color: var(--accent); }
 .news-thumb { width: 100%; height: 160px; object-fit: cover; }

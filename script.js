@@ -1,4 +1,4 @@
-// Função para as setas de navegação
+
 function scrollGrid(id, val) {
     document.getElementById(id).scrollLeft += val;
 }
@@ -6,7 +6,7 @@ function scrollGrid(id, val) {
 function gerarNoticias(containerId, total) {
     const container = document.getElementById(containerId);
     
-    // Simular carregamento (Skeleton Loading por 1.5 segundos)
+  
     setTimeout(() => {
         container.innerHTML = ''; // Remove os skeletons
         
@@ -29,7 +29,7 @@ function gerarNoticias(containerId, total) {
             `;
             container.appendChild(card);
         }
-    }, 1500); // 1.5 segundos de animação skeleton
+    }, 1500); 
 }
 
 function abrirNoticia(titulo, categoria, corpo) {
