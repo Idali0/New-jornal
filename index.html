@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jornal Sequele | O Portal da Centralidade</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <nav class="menu">
+        <div class="nav-container">
+            <a href="index.html" class="logo-textual">JORNAL <span>SEQUELE</span></a>
+            <ul class="list">
+                <li><a class="btn-link" href="#">Cultura</a></li>
+                <li><a class="btn-link" href="#">Instituições</a></li>
+                <li><a class="btn-link" href="#">Desporto</a></li>
+                <li><a class="btn-link" href="#">Economia</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="header-overlay">
+            <div class="header-box-info">
+                <span class="tag-category">Destaque do Dia</span>
+                <h2 class="header-title">Modernização das vias no Sequele avança para nova fase em 2026</h2>
+                <button class="btn-cta" onclick="abrirNoticia('Modernização das vias no Sequele', 'Local', 'Projeto de iluminação LED avança nos blocos.')">Ler notícia completa</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- SEÇÃO DESTAQUE -->
+        <div class="section-header">
+            <h1 class="news-section-title">Em Destaque</h1>
+            <div class="nav-arrows">
+                <button class="arrow-btn" onclick="scrollGrid('grid-destaque', -300)"><i class="fas fa-chevron-left"></i></button>
+                <button class="arrow-btn" onclick="scrollGrid('grid-destaque', 300)"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="scroll-wrapper">
+            <section class="news-scroll-container" id="grid-destaque">
+                <!-- Skeletons iniciais -->
+                <div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div>
+            </section>
+        </div>
+
+        <div style="margin-top: 60px;"></div> <!-- Espaço entre Nacional e Mundo -->
+
+        <!-- SEÇÃO NACIONAL -->
+        <div class="section-header">
+            <h1 class="news-section-title">Nacional e Mundo</h1>
+            <div class="nav-arrows">
+                <button class="arrow-btn" onclick="scrollGrid('grid-nacional', -300)"><i class="fas fa-chevron-left"></i></button>
+                <button class="arrow-btn" onclick="scrollGrid('grid-nacional', 300)"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="scroll-wrapper">
+            <section class="news-scroll-container" id="grid-nacional">
+                <div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Todos os direitos reservados Jornal Sequele &copy; 2026 | Idálio Garcia</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Notícia | Jornal Sequele</title>
+</head>
+<body style="background: #050a18;">
+    <nav class="menu">
+        <div class="nav-container">
+            <a href="index.html" class="logo-textual">JORNAL <span>SEQUELE</span></a>
+            <a href="index.html" style="color:white; text-decoration:none; font-size: 0.7rem; font-weight:800; border: 1px solid #3a86ff; padding: 5px 12px; border-radius: 4px;">VOLTAR</a>
+        </div>
+    </nav>
+    
+    <div style="max-width: 800px; margin: 60px auto; padding: 0 25px;">
+        <span id="cat" style="color:#3a86ff; font-weight:bold; text-transform:uppercase; font-size:0.85rem;"></span>
+        <h1 id="tit" style="font-size: 2.6rem; margin: 15px 0; color:#9d4edd; line-height:1.1; font-weight:800;"></h1>
+        <hr style="border:0; border-top:1px solid #1e293b; margin: 25px 0;">
+        <div id="corpo" style="color:#cbd5e0; line-height:1.8; font-size:1.2rem; font-weight:300;"></div>
+    </div>
+
+    <script>
+        document.getElementById('tit').innerText = localStorage.getItem('temp_titulo') || "Notícia";
+        document.getElementById('cat').innerText = localStorage.getItem('temp_cat') || "GERAL";
+        document.getElementById('corpo').innerText = localStorage.getItem('temp_corpo') || "Conteúdo em atualização.";
+    </script>
+</body>
+</html>
